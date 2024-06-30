@@ -1,14 +1,18 @@
 {
   "scripts": {
-    "dev": "nodemon src/index.ts"
+    "dev": "nodemon src/index.ts",
+    "db:migrate": "ts-node src/database/migration.ts",
+    "db:seed": "ts-node src/database/seeder.ts"
   },
   "dependencies": {
+    "mysql2": "^3.10.1",
     "nodemon": "^3.1.4",
     "ts-node": "^10.9.2",
     "typescript": "^5.5.2",
     "ws": "^8.17.1"
   },
   "devDependencies": {
+    "@types/node": "^20.14.9",
     "@types/ws": "^8.5.10"
   }
 }
